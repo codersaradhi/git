@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Form project</title>
+    <style>
+        *,*::before,*::after{
+            font-family: "Poppins", sans-serif;
+            /* box-sizing: border-box; */
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        :root{
+            --primary-light-color: 200%, 100%, 60%;
+            --primary-dark-color:200%, 100%, 30%;
+            --primary-hsl:200%, 100%, 10%;
+
+        }
+        .fullscreen-container{
+            background-image: url("./background-image.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container{
+            --color:rgba(0, 0, 0, 0.454);
+            background-color: var(--color);
+            box-shadow: 0 0 15px 0 var(--color);
+            width: 80%;
+            max-width: 600px;
+            /* text-align: center; */
+            padding: 100px 30px;
+            border-radius: 20px;
+        }
+        .login-title{
+            color: white;
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            /* margin-bottom: 30px; */
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 20px;
+            margin-top: 50px;
+
+        }
+        .input-source{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+        .input-source label{
+            color: white;
+            font-weight: lighter;
+        }
+        .input-source input{
+            background-color: rgba(245, 222, 179, 0.368);
+            font-size: 1.25rem;
+            padding: 0.5rem;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            border-radius: 0.5rem;
+        }
+        .input-source input:focus{
+            box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+        }
+        .login-btn{
+            padding: 0.5em 1em;
+            font-size: 1.5rem;
+            background-color: rgba(251, 148, 79, 0.623);
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            color: white;
+            cursor: pointer;
+            font-weight: lighter;
+        }
+        .login-btn:hover,.login-btn:focus{
+            background-color: rgba(255, 102, 0, 0.623);
+        }
+        /* .input-source.sucess input{
+            box-shadow: 0 0 0 1px lightgreen;
+        }
+        .input-source.error input{
+            box-shadow: 0 0 0 1px lightcoral;
+        }
+        .input-source:focus input{
+            box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+        }
+        .input-source .msg{
+            display: none;
+            font-size: 0.75rem;
+        }
+        .input-source.sucess .msg ,
+        .input-source.error .msg{
+            display: block;
+        }
+        .input-source.sucess .msg{
+            color: lightgreen;
+        }
+        .input-source.error .msg{
+            color: lightcoral;
+        } */
+
+
+       
+    </style>
+</head>
+<body>
+    <div class="fullscreen-container">
+        <div class="login-container">
+            <h1 class="login-title">Welcome</h1>
+            <form  class="login-form">
+                <div class="email input-source sucess">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                   
+                    <span  class="msg">valid email</span>
+                   
+                </div>
+                <div class="password input-source error">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                   
+                        <span class="msg">incorrect password</span>
+                    
+                </div>
+                <div class="input-source">
+                    <button class="login-btn" type="button">Login</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
