@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Cards project</title>
+</head>
+<style>
+    *,
+    *::after,
+    *::before {
+        font-family: "Open Sans", sans-serif;
+    }
+    :root{
+        --margin-for-cards:10px;
+        --btn-color: rgb(80, 148, 197);
+        --padding-for-cards:10px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        align-items: flex-start;
+        
+    }
+    .cardheader > img{
+        overflow: hidden;
+    }
+
+    img{
+
+        display: block;
+        width: 100%;
+        max-height:200px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        object-position: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    h3{
+        font-size: 1.5rem;
+        padding-left: var(--padding-for-cards);
+    }
+    .card-shadow{
+        border: none;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.295);
+    }
+    .card{
+        border-radius: 8px;
+    }
+    .card-header{
+        padding-bottom:var(--padding-for-cards);
+    }
+    .card-body{
+        padding: var(--padding-for-cards);
+        text-align: left;
+    }
+    .card-footer{
+        padding: var(--padding-for-cards);
+    
+    }
+    .btn + .btn{
+        margin-left: 10px;;
+    }
+    .btn {
+        
+        background-color: var(--btn-color);
+        height: 40px;
+        width: 120px;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        
+    }
+
+    .btn:hover {
+        background-color: #5fb1efa6;
+        color: white;
+    }
+
+    .activebtn {
+        color: #fff;
+    }
+
+    .hallowbtn {
+        background-color: #fff;
+        color: var(--btn-color);
+        border: 1px solid var(--btn-color);
+    }
+</style>
+
+<body>
+    <div class="cards">
+        <div class="card card-shadow">
+            <div class="card-header">
+                <img src="./Album 1.png" alt="">
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatibus officiis iure
+                    itaque quos expedita provident maxime iste, alias fugiat eveniet quod. Pariatur tempore ut possimus
+                    est ducimus veniam rem iste amet?</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn activebtn">Details</button>
+                <button class="btn hallowbtn">Contact Sellers</button>
+            </div>
+
+        </div>
+        <div class="card card-shadow">
+            <div class="card-header">
+                <img src="./Album 2.png" alt="">
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatibus officiis iure
+                    itaque quos expedita provident maxime iste, alias fugiat eveniet quod. Pariatur tempore ut possimus
+                    est ducimus veniam rem iste amet?</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn activebtn">Details</button>
+                <button class="btn hallowbtn">Contact Sellers</button>
+            </div>
+        </div>
+        <div class="card card-shadow">
+            <div class="card-header">
+                <h3>123 Street Highland</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatibus officiis iure
+                    itaque quos expedita provident maxime iste, alias fugiat eveniet quod. Pariatur tempore ut possimus
+                    est ducimus veniam rem iste amet?</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn activebtn">Details</button>
+                <button class="btn hallowbtn">Contact Sellers</button>
+            </div>
+        </div>
+        <div class="card card-shadow">
+            <div class="card-header">
+                <h3>456 Street Northland</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatibus officiis iure
+                    itaque quos expedita provident maxime iste, alias fugiat eveniet quod. Pariatur tempore ut possimus
+                    est ducimus veniam rem iste amet?</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn activebtn">Details</button>
+                <button class="btn hallowbtn">Contact Sellers</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
