@@ -1,0 +1,52 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+:root{
+    --emoji-color:rgb(246, 218, 77);
+    --emoji-size:200px;
+    --backgroundcolor: rgb(190, 190, 190);
+}
+.emoji{
+    background-color:var(--backgroundcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.head{
+    height: var(--emoji-size);
+    width: var(--emoji-size);
+    background-color: var(--emoji-color);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.eyes{
+    position: absolute;
+    top: calc(var(--emoji-size) * 0.25);
+    left: calc(var(--emoji-size) * 0.2);
+    /* background-color: black; */
+    width: calc(var(--emoji-size)*0.6);
+    height: calc(var(--emoji-size)*0.15);
+    /* overflow: hidden; */
+}
+.eye-left{
+    width: calc(var(--emoji-size) * 0.09);
+    height: calc(var(--emoji-size) * 0.18);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.eye-right{
+
+    width: calc(var(--emoji-size) * 0.09);
+    height: calc(var(--emoji-size) * 0.18);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+/* .eye-left{
+    position: absolute;
+    top: calc(var(--emoji-size)*0.4);
+    bottom: calc(var(--emoji-size) *0.4);
+} */
