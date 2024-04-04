@@ -1,8 +1,8 @@
+// for node js
 // const usergreetings = require ('./message.js');
-
 // // console.log(usergreetings);
-
 // console.log(usergreetings.message());
+
 
 // for html page///////
 import { name, age } from "./person.js";
