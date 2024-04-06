@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Travesal</title>
+    <style>
+        *,*::after,*::before{
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .grandparent{
+            position: relative;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(232, 0, 0);
+            border: 5px solid rgb(79, 79, 79);
+            height: 700px;
+            width:600px;
+        }
+        .parent{
+            /* position: absolute; */
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            background-color: rgb(0, 255, 0);
+            border: 5px solid rgb(80, 80, 80);
+            height: 250px;
+            width: 500px;
+
+        }
+        .child{
+            background-color: rgb(0, 191, 255);
+            border: 5px solid rgb(80, 80, 80);
+            height: 150px;
+            width: 200px;
+        }
+
+    </style>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="grandparent" id="grandparent-id" >
+        <div class="parent">
+            <div class="child" id="child-One"></div>
+            <div class="child"></div>
+        </div>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+    </div>
+</body>
+</html>
