@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event listeners</title>
+    <style>
+        *,*::after,*::before{
+            box-sizing: border-box;
+        }
+        :root{
+            --base-side:600px;
+            /* --base-height:600px; */
+        }
+        body{
+            margin: 0;
+            min-height: 100vh;
+        }
+        body ,div{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            /* width: 100vw;
+            height: 100vh; */
+        }
+        .grandparent{
+            /* display: grid;
+            align-items: center;
+            justify-content: center; */
+            height: var(--base-side);
+            width: var(--base-side);
+            background-color: rgb(255, 73, 73);
+        }
+        .parent{
+            /* display: grid;
+            align-items: center;
+            justify-content: center; */
+            height: calc(var(--base-side)*0.66);
+            width: calc(var(--base-side)*0.66);
+            background-color: rgb(70, 255, 70);
+        }
+        .child{
+            height: calc(var(--base-side)*0.33);
+            width: calc(var(--base-side)*0.33);
+            background-color: rgb(64, 64, 255);
+        }
+
+
+    </style>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+</body>
+</html>
