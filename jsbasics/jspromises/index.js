@@ -66,3 +66,6 @@ watchTutorialPromise().then((message) =>{
 }).catch((error)=>{
     console.log(error.name + ' ' +error.message);
 })
+
+/////////////////////////////Async and wait to work with js promises
+
